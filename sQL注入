@@ -7,18 +7,7 @@ from multiprocessing.dummy import Pool # 多线程的库
 
 # 禁用不安全请求警告
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
-def banner():
-    test="""                                                                                                     
-,--------. ,--.                   ,---. ,--.                   ,--.       ,------.           ,-----. 
-'--.  .--' |  ,---.   ,---.      /  .-' `--' ,--.--.  ,---.  ,-'  '-.     |  .--. '  ,---.  '  .--./ 
-   |  |    |  .-.  | | .-. :     |  `-, ,--. |  .--' (  .-'  '-.  .-'     |  '--' | | .-. | |  |     
-   |  |    |  | |  | \   --.     |  .-' |  | |  |    .-'  `)   |  |       |  | --'  ' '-' ' '  '--'\ 
-   `--'    `--' `--'  `----'     `--'   `--' `--'    `----'    `--'       `--'       `---'   `-----' 
-                                                                                                    author:Bing
-                                                                                                    version:1.0"""
-    print(test)
 def main():
-    banner()
     # 初始化
     parse = argparse.ArgumentParser(description="科汛网校KesionEDU CheckOrder sQL注入")
 
@@ -75,4 +64,5 @@ def poc(target):
 # 函数入口
 
 if __name__ == "__main__":
+
     main()
